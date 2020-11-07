@@ -1,0 +1,19 @@
+{
+  "name": "sitepro",
+  "version": "1.0.0",
+  "description": "site pro",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./styles/sass/main.scss ./styles/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CynRim/Site-pro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CynRim/Site-pro/issues"
+  },
+  "homepage": "https://github.com/CynRim/Site-pro#readme"
+}

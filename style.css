@@ -1,0 +1,220 @@
+
+/* HEADER ACCUEIL */ 
+
+header {
+    height: 100vh;
+    weight: 100%;
+    background: url("./img/imgBackground.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    margin: 0;
+    position: relative;
+    top: 30rem;
+    text-align: center;
+    color: #F7F7F7;
+    font-family: 'Kaushan Script';
+    font-size: 11rem;
+}
+
+header h2{
+    margin: 0;
+    position: relative;
+    top: 32rem;
+    text-align: center;
+    color: #F7F7F7;
+    font-family: 'Abril Fatface';
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+}
+
+header #arrow{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    height: 8rem;
+    width: 8rem;
+    font-size: 4rem;
+    line-height: 8rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #FFF;
+    box-shadow: 0 0 0 0 #FFF;
+    animation: pulse 1.3s infinite;
+}
+
+@keyframes pulse{
+    to{
+        box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.01);
+    }
+}
+
+/* PREMIERE SECTION A PROPOS, 3 PHOTOS */ 
+
+.section-about{
+    background-color: #F7F7F7;
+    padding-bottom: 10rem;
+}
+
+.centerH{
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.titreAbout {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, #373737, #C0B283);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    padding-top: 5rem;
+}
+
+.row {
+    max-width:114rem;
+    margin: 0 auto;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row [class^="col-"] {
+    float: left;
+}
+
+.row [class^="col-"]:not(:last-child) {
+    margin-right: 6rem;
+}
+
+.row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2);
+}
+
+.sousTitreAbout{
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem!important;
+}
+
+.paragraphe{
+    font-size: 1.9rem;
+}
+
+/* Le premier enfant des paragraphes */
+.paragraphe:not(:last-child){
+    margin-bottom: 3rem;
+}
+
+
+.composition{
+    position: relative;
+}
+
+.composition_photo{
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem;
+}
+
+.composition_photo--1{
+    left: 0;
+    top: -2rem;
+}
+
+.composition_photo--2{
+    right: 0;
+    top: 2rem;
+}
+
+.composition_photo--3{
+    left: 20%;
+    top: 10rem;
+}
+
+.composition_photo:hover{
+    outline: 1.5rem solid #C0B283;
+    transform: scale(1.05) translateY(-0.5rem);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+    z-index: 30;
+}
+
+.composition_photo:hover .composition_photo:not(:hover){
+    transform: scale(0.95);
+}
+
+
+/* SECTION TARIFS */
+
+#tarifs{
+    border-top: 1px dashed rgb(209, 174, 59);
+}
+
+#tarifs h2 {
+    text-align: center;
+    font-size: 5.5rem;
+    background: #F7F7F7;
+    background-image: linear-gradient(to right, #000000, rgb(255,239,185));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+    padding-top: 4rem;
+}
+
+#containerFlex{
+    background: #F7F7F7;
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    padding-bottom: 8rem;
+}
+
+.flexCards{
+    width: 30rem;
+    height: 45rem;
+    margin: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.flexCards:nth-child(1){
+    border: 1px dashed #373737;
+}
+
+.flexCards:nth-child(2){
+    border: none;
+}
+
+.flexCards:nth-child(3){
+    border: 1px dashed #373737;
+}
+
+.head{
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    color: #373737;
+    background: #F0EAD6;
+}
+
+.head p{
+    
+}
